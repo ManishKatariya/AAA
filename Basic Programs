@@ -1,0 +1,180 @@
+
+Open In Colab
+In [26]:
+a=2
+b=5
+a,b=b,a
+a
+Out[26]:
+5
+In [27]:
+for i in range(10):
+    print(i)
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+In [ ]:
+k=10
+while(k<=20):
+     print(k) 
+     k=k+1
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+In [ ]:
+import random
+random.randrange(1,10)
+Out[ ]:
+4
+In [ ]:
+random.random()
+Out[ ]:
+0.31790487180603444
+In [ ]:
+random.randint(1,5)
+Out[ ]:
+1
+In [36]:
+L=[]
+L.append(2)
+
+L
+Out[36]:
+[2]
+In [29]:
+L.append(3)
+L.append(0)
+L.reverse()
+In [30]:
+L
+Out[30]:
+[0, 3, 2]
+In [31]:
+L.sort()
+L
+Out[31]:
+[0, 2, 3]
+In [ ]:
+L.len()
+L.insert(0, 9)
+L.pop(0)
+L.min()
+L.max()
+L.sum()
+In [ ]:
+del L[-1]
+L
+Out[ ]:
+[0]
+In [ ]:
+cubes=[]
+for x in [1,2,3,4,5]:
+    cubes.append(x**3)
+print(cubes)
+[1, 8, 27, 64, 125]
+In [ ]:
+cubes = [x**3 for x in [1,2,3,4,5,6]]
+cubes
+Out[ ]:
+[1, 8, 27, 64, 125, 216]
+In [ ]:
+n= int(input("Enter any Number"))
+Number=[]
+for i in range(n):
+    Num= int(input("Enter List of Numbers"))
+    Number.append(Num)
+print(Number)
+N=Number
+for i in N:
+    if i%2!=0:
+        Number.remove(i)
+print(Number)
+In [ ]:
+n= int(input("Enter any Number"))
+Number=[]
+for i in range(n):
+    Num= int(input("Enter List of Numbers"))
+    Number.append(Num)
+    
+print(Number)
+N=Number
+for i in N:
+    if i%2!=0:
+        Number.remove(i)
+print(Number)
+In [ ]:
+d={'a':25, 'b':35, 'c':56}
+d
+Out[ ]:
+{'a': 25, 'b': 35, 'c': 56}
+In [ ]:
+d['a']
+Out[ ]:
+25
+In [ ]:
+del d['a']
+In [ ]:
+d
+Out[ ]:
+{'b': 35, 'c': 56}
+In [ ]:
+d.keys()
+Out[ ]:
+dict_keys(['b', 'c'])
+In [ ]:
+d.values()
+Out[ ]:
+dict_values([35, 56])
+In [ ]:
+d.items()
+Out[ ]:
+dict_items([('b', 35), ('c', 56)])
+In [ ]:
+for i in d.items():
+    print(i)
+('b', 35)
+('c', 56)
+In [ ]:
+d1= {x:x**2 for x in range(11)if x%2==0}
+In [ ]:
+d1
+Out[ ]:
+{0: 0, 2: 4, 4: 16, 6: 36, 8: 64, 10: 100}
+In [ ]:
+d1.has_key(3)
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-40-35d8f0407d3b> in <module>
+----> 1 d1.has_key(3)
+
+AttributeError: 'dict' object has no attribute 'has_key'
+In [ ]:
+import  matplotlib.pyplot as plt
+In [ ]:
+plt.plot([1,2,3,4,5,6])
+plt.show()
+
+In [ ]:
+plt.grid(True)
+plt.title('squares of the numbers')
+plt.xlabel('The Numbers', fontsize=18, color='red')
+plt.ylabel('The squares',fontsize=18, color='red')
+plt.plot([1,2,3,4,5], [1,4,9,16,25], 'r^-', linewidth=3.0)
+plt.show()
+
+In [ ]:
